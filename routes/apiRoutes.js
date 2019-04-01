@@ -7,7 +7,7 @@ module.exports = function(app) {
   // Retrieve data from the db
 app.get("/all", function(req, res) {
   // Find all results from the scrapedData collection in the db
-  app.db.articles.find({}, function(error, found) {
+  db.articles.find({}, function(error, found) {
     // Throw any errors to the console
     if (error) {
       console.log(error);
